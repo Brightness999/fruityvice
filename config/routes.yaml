@@ -1,0 +1,18 @@
+controllers:
+  resource: ../src/Controller/
+  type: attribute
+
+get_fruits:
+  path: /api/fruits
+  controller: App\Controller\FruitController::index
+  methods: POST
+
+add_favourite:
+  path: /api/addFavourite
+  controller: App\Controller\FruitController::addFavourite
+  methods: POST
+
+get_favourite:
+  path: /api/favourites
+  controller: App\Controller\FruitController::getFavourites
+  methods: POST
